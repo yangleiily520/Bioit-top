@@ -20,8 +20,8 @@ jobs:
           git submodule update --recursive --remote
       - name: Commit
         run: |
-          git config user.email "weiyanshum@gmail.com"
-          git config user.name "shenweiyan"
+          git config user.email "yangleiily@gmail.com"
+          git config user.name "yangleiily520"
           git add --all
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
@@ -38,7 +38,7 @@ jobs:
       - name: Deploy To Bioit-top                       # 部署至当前仓库的其他分支
         uses: peaceiris/actions-gh-pages@v3             # 一个自动发布github pages的action
         with:
-          external_repository: shenweiyan/Bioit-top	# 发布到哪个repo
+          external_repository: yangleiily520/Bioit-top	# 发布到哪个repo
           #1. 创建 Personal_Access_Token：
           #   GitHub 个人账号 -> Settings -> Developer settings -> Personal access tokens ->  Tokens (classic) -> New personal access token (classic)
           #   - Expiration: No expiration
