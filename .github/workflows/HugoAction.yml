@@ -45,7 +45,7 @@ jobs:
           #   - Select scopes: 全选
           #2. 粘贴 Personal_Access_Token：
           #   进入目标 repo -> Settings -> Security -> Secrets and variables -> Actions，选择 New repository secret -> 粘贴前面生成的 personal_access_token	
-          personal_token: ${{ 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 }}	  
+          personal_token: ${{ yanglei }}	  
           #注意这里指的是 Pages 要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置；因为 hugo 默认生成静态网页到 public 文件夹，所以这里发布 public 文件夹里的内容。
           publish_dir: ./public
           #发布到哪个branch
